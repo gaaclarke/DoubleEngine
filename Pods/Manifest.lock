@@ -1,0 +1,28 @@
+PODS:
+  - double_engine (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - double_engine (from `DoubleEngine/double_engine/.ios/Flutter`)
+  - Flutter (from `DoubleEngine/double_engine/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `DoubleEngine/double_engine/.ios/Flutter/FlutterPluginRegistrant`)
+
+EXTERNAL SOURCES:
+  double_engine:
+    :path: DoubleEngine/double_engine/.ios/Flutter
+  Flutter:
+    :path: DoubleEngine/double_engine/.ios/Flutter/engine
+  FlutterPluginRegistrant:
+    :path: DoubleEngine/double_engine/.ios/Flutter/FlutterPluginRegistrant
+
+SPEC CHECKSUMS:
+  double_engine: e2d6f9fb504c9162175d25b508054659e1cda54f
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
+
+PODFILE CHECKSUM: fece17b7e773e100c10470d244dac16c76265490
+
+COCOAPODS: 1.9.3
