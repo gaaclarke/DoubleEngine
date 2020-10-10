@@ -5,25 +5,27 @@
 //  Created by Aaron Clarke on 10/5/20.
 //
 
-#import "ViewController.h"
+#import "MultipleFlutterViewController.h"
 #import <Flutter/Flutter.h>
 
-@interface ViewController ()
+@interface MultipleFlutterViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MultipleFlutterViewController {
+  int _numberOfFlutters;
+}
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  // Do any additional setup after loading the view.
+- (instancetype)initWithNumber:(int)numberOfFlutters {
+  self = [super initWithNibName:nil bundle:nil];
+  _numberOfFlutters = numberOfFlutters;
+  return self;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  const int count = 3;
-  const CGFloat height = UIScreen.mainScreen.bounds.size.height / count;
-  for (int i = 0; i < count; ++i) {
+  const CGFloat height = UIScreen.mainScreen.bounds.size.height / _numberOfFlutters;
+  for (int i = 0; i < _numberOfFlutters; ++i) {
     FlutterViewController* vc = [[FlutterViewController alloc] init];
     [self addChildViewController:vc];
     [self.view addSubview:vc.view];
