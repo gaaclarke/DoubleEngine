@@ -8,6 +8,11 @@
 #import "MultipleFlutterViewController.h"
 #import <Flutter/Flutter.h>
 
+@interface FlutterEngine (Waiter)
+- (void)waitForFirstFrame:(NSTimeInterval)timeout
+                 callback:(void (^_Nonnull)(BOOL didTimeout))callback;
+@end
+
 #define USE_SPAWN
 
 @interface MultipleFlutterViewController ()
@@ -26,6 +31,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
+  const double startTime = CFAbsoluteTimeGetCurrent();
+  __block int count = 0;
   const CGFloat height = UIScreen.mainScreen.bounds.size.height / _numberOfFlutters;
   FlutterEngine* mainEngine = nil;
   for (int i = 0; i < _numberOfFlutters; ++i) {
@@ -47,6 +54,13 @@
     [self.view addSubview:vc.view];
     vc.view.frame = CGRectMake(0, i * height, UIScreen.mainScreen.bounds.size.width, height);
     [vc didMoveToParentViewController:self];
+    [engine waitForFirstFrame:10.0 callback:^(BOOL didTimeout) {
+      assert(!didTimeout);
+      count += 1;
+      if (count == self->_numberOfFlutters) {
+        NSLog(@"duration: %f", CFAbsoluteTimeGetCurrent() - startTime);
+      }
+    }];
   }
 }
 
