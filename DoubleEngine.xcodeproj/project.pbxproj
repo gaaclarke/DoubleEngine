@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A1F430525310A84000D532F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F430425310A84000D532F /* HomeViewController.m */; };
 		0D434077252BB57A0025D600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D434076252BB57A0025D600 /* AppDelegate.m */; };
-		0D43407A252BB57A0025D600 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D434079252BB57A0025D600 /* SceneDelegate.m */; };
 		0D43407D252BB57A0025D600 /* MultipleFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D43407C252BB57A0025D600 /* MultipleFlutterViewController.m */; };
 		0D434080252BB57A0025D600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D43407E252BB57A0025D600 /* Main.storyboard */; };
 		0D434082252BB57B0025D600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D434081252BB57B0025D600 /* Assets.xcassets */; };
@@ -25,8 +24,6 @@
 		0D434072252BB57A0025D600 /* DoubleEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D434075252BB57A0025D600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D434076252BB57A0025D600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D434078252BB57A0025D600 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0D434079252BB57A0025D600 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		0D43407B252BB57A0025D600 /* MultipleFlutterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleFlutterViewController.h; sourceTree = "<group>"; };
 		0D43407C252BB57A0025D600 /* MultipleFlutterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleFlutterViewController.m; sourceTree = "<group>"; };
 		0D43407F252BB57A0025D600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,8 +74,6 @@
 			children = (
 				0D434075252BB57A0025D600 /* AppDelegate.h */,
 				0D434076252BB57A0025D600 /* AppDelegate.m */,
-				0D434078252BB57A0025D600 /* SceneDelegate.h */,
-				0D434079252BB57A0025D600 /* SceneDelegate.m */,
 				0D43407B252BB57A0025D600 /* MultipleFlutterViewController.h */,
 				0D43407C252BB57A0025D600 /* MultipleFlutterViewController.m */,
 				0D43407E252BB57A0025D600 /* Main.storyboard */,
@@ -246,7 +241,6 @@
 				0D434077252BB57A0025D600 /* AppDelegate.m in Sources */,
 				0D434090252BD0380025D600 /* NavController.m in Sources */,
 				0D434088252BB57B0025D600 /* main.m in Sources */,
-				0D43407A252BB57A0025D600 /* SceneDelegate.m in Sources */,
 				0A1F430525310A84000D532F /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DoubleEngine/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,7 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DoubleEngine/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,7 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DoubleEngine/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
